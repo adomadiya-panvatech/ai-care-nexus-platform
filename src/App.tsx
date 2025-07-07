@@ -8,6 +8,10 @@ import { DashboardLayout } from "./components/layout/DashboardLayout";
 import Dashboard from "./pages/Dashboard";
 import Patients from "./pages/Patients";
 import Communications from "./pages/Communications";
+import CareCoordination from "./pages/CareCoordination";
+import Appointments from "./pages/Appointments";
+import Reports from "./pages/Reports";
+import Compliance from "./pages/Compliance";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,10 +27,10 @@ const App = () => (
             <Route index element={<Dashboard />} />
             <Route path="patients" element={<Patients />} />
             <Route path="communications" element={<Communications />} />
-            <Route path="care-coordination" element={<div className="p-8 text-center text-gray-500">Care Coordination - Coming Soon</div>} />
-            <Route path="appointments" element={<div className="p-8 text-center text-gray-500">Appointments - Coming Soon</div>} />
-            <Route path="reports" element={<div className="p-8 text-center text-gray-500">Reports & Billing - Coming Soon</div>} />
-            <Route path="compliance" element={<div className="p-8 text-center text-gray-500">Compliance - Coming Soon</div>} />
+            <Route path="care-coordination" element={<CareCoordination />} />
+            <Route path="appointments" element={<Appointments />} />
+            <Route path="reports" element={<Reports />} />
+            <Route path="compliance" element={<Compliance />} />
             <Route path="settings" element={<div className="p-8 text-center text-gray-500">Settings - Coming Soon</div>} />
           </Route>
           <Route path="*" element={<NotFound />} />
