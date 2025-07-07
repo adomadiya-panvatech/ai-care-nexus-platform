@@ -12,6 +12,7 @@ import CareCoordination from "./pages/CareCoordination";
 import Appointments from "./pages/Appointments";
 import Reports from "./pages/Reports";
 import Compliance from "./pages/Compliance";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,7 +32,7 @@ const App = () => (
             <Route path="appointments" element={<Appointments />} />
             <Route path="reports" element={<Reports />} />
             <Route path="compliance" element={<Compliance />} />
-            <Route path="settings" element={<div className="p-8 text-center text-gray-500">Settings - Coming Soon</div>} />
+            <Route path="settings" element={<Settings />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
